@@ -19,8 +19,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "paths": {
+      "@apis/*": [ "apis/*" ],
+      "@assets/*": [ "assets/*" ],
+      "@components/*": [ "components/*" ],
+      "@constants/*": [ "constants/*" ],
+      "@guards/*": [ "guards/*" ],
+      "@helpers/*": [ "helpers/*" ],
+      "@hooks/*": [ "hooks/*" ],
+      "@layouts/*": [ "layouts/*" ],
+      "@pages/*": [ "pages/*" ],
+      "@reducer/*": [ "reducer/*" ],
+      "@routes/*": [ "routes/*" ],
+      "@store/*": [ "store/*" ],      
+    },
+    "jsx": "preserve",
   },
   "include": ["src"]
-
 }
